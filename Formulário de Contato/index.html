@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    <div id="modal">
+        <div id="txtModal">
+            &#9989; Message Sent!
+            <p>Thanks for copleting the form. We'll be in touch soon!</p>
+        </div>
+
+    </div>
+    <div id="box">
+        <div id="conteudo">
+            <div>
+                <h1>Contact Us</h1>
+                <div id="linha01">
+                    <div id="firstName">
+                        <p>First Name <label class="asterisco">*</label></p>
+                        <input type="text" id="txtFirstName" class="inputLinha01" autocomplete="off">
+                        <div id="erroFirstName">
+                            This field is required
+                        </div>
+                    </div>
+                    <div id="lastName">
+                        <p>LastName <label class="asterisco">*</label></p>
+                        <input type="text" id="txtLastName" class="inputLinha01" autocomplete="off">
+                        <div id="erroLastName">
+                            This field is required
+                        </div>
+                    </div>
+                </div>
+
+                <div id="linha02">
+                    <div id="emailAddress">
+                        <p>Email Address <label class="asterisco">*</label></p>
+                        <input type="text" id="txtEmail" autocomplete="off">
+
+                        <div id="erroEmail">
+                            Please enter a valid email address
+                        </div>
+                    </div>
+                </div>
+
+                <div id="linha03">
+                    <p>Querry Type <label class="asterisco">*</label></p>
+
+                    <div id="linha03Input">
+                        <div id="txt01">
+                            <input type="text" class="inputLinha03" disabled value="General Enquiry">
+
+                            <input type="checkbox" name="checkboxLinha03" id="checkbox01Linha03" checked
+                                onclick="querryType01()">
+
+
+                        </div>
+                        <div id="txt02">
+                            <input type="text" class="inputLinha03" disabled value="Support Request">
+
+                            <input type="checkbox" name="checkboxLinha03" id="checkbox02Linha03"
+                                onclick="querryType02()">
+                        </div>
+
+                    </div>
+
+                    <div id="linha04">
+                        <p>Message <label class="asterisco">*</label></p>
+                        <textarea id="txtMessage"></textarea>
+                        <div id="erroMessage">
+                            This field is required
+                        </div>
+                    </div>
+
+                    <div id="linha05">
+                        <input type="checkbox" id="checkboxLinha05">
+                        <label id="txtLinha05">I concent to being contacted by the team </label> <label
+                            class="asterisco">*</label>
+                        <div id="erroCheckboxLinha05">
+                            To submit this form, please concent to being contacted
+                        </div>
+                    </div>
+
+                    <div id="linha06">
+                        <input type="button" value="Submit" id="btnSubmit" onclick="submit()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <footer>
+            Challenge by<a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+            Coded by <a href="https://github.com/FelipeNarciso/Contact-Us/upload/main"> FelipeNarciso</a>.
+    </footer>
+
+        <script src="main.js"></script>
+</body>
+
+</html>
