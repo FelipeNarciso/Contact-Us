@@ -69,6 +69,7 @@ function submit(){
         email.value = ''
         message.value = ''
         concentCheckbox.checked = false
+        window.scrollTo({top: 0, behavior: 'smooth'});
     }
 
     setTimeout(fecharModal, 4000)
@@ -83,19 +84,32 @@ function fecharModal(){
 }
 
 function querryType01(){
-    let check1 = document.getElementById('checkbox01Linha03')
-    let check2 = document.getElementById('checkbox02Linha03')
+    let input01 = document.getElementById('input01')
+    let input02 = document.getElementById('input02')
+    let check01 = document.getElementById('checkbox01Linha03')
+    let check02 = document.getElementById('checkbox02Linha03')
 
-    if (check1.checked) {
-        check2.checked = false;
-    }
+    check01.style.display = 'block'
+    check02.style.display = 'none'
+
+    input01.style.borderColor = 'rgb(12, 125, 105)'
+    input01.style.backgroundColor = 'RGB(224, 241, 231)'
+    input02.style.borderColor = 'grey'
+    input02.style.backgroundColor = 'white'
+   
 }
 
 function querryType02(){
-    let check1 = document.getElementById('checkbox01Linha03')
-    let check2 = document.getElementById('checkbox02Linha03')
+    let input01 = document.getElementById('input01')
+    let input02 = document.getElementById('input02')
+    let check01 = document.getElementById('checkbox01Linha03')
+    let check02 = document.getElementById('checkbox02Linha03')
 
-    if (check2.checked) {
-        check1.checked = false;
-    }
+    check01.style.display = 'none'
+    check02.style.display = 'block'
+
+    input01.style.borderColor = 'grey'
+    input01.style.backgroundColor = 'white'
+    input02.style.borderColor = 'rgb(12, 125, 105)'
+    input02.style.backgroundColor = 'RGB(224, 241, 231)'
 }
