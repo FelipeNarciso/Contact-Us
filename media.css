@@ -13,7 +13,7 @@
     
     .inputLinha01{
         height: 40px;
-        width: 75%;
+        width: 100%;
     }
 
     #lastName{
@@ -21,18 +21,9 @@
     }
 
     #txtEmail{
-        width: 75%;
+        width: 100%;
         height: 40px;
     }
-
-
-
-
-
-
-
-
-
 
     #linha03{
         font-size: 15px;
@@ -41,19 +32,19 @@
     }
     
     .inputLinha03{
-        /* display: none; */
+        display: block;
         border-radius: 5px;
         border-style: solid;
-        padding-left: 30px;
+        padding-left: 50px;
         border-width: 1px;
-        height: 30px;
-        width: 180px;
+        height: 40px;
+        width: 100%;
         background-color: white;
         border-color: gray;
     }
-    
+
     #linha03Input{
-        display: flex;
+        display: block;
     }
     
     #txt01{
@@ -65,22 +56,22 @@
     #txt02{
         font-size: 15px;
         color: rgb(88, 88, 88);
-        padding-top: 20px;
+        padding-top: 15px;
         padding-left: 0px;
     }
     
     #checkbox01Linha03{
         display: flex;
         position: relative;
-        top: -22px;
+        top: -30px;
         left: 10px;
         cursor: pointer;
     }
     
     #checkbox02Linha03{
-        display: flex;
+        display: none;
         position: relative;
-        top: -22px;
+        top: -30px;
         left: 10px;
         cursor: pointer;
     }
@@ -91,81 +82,14 @@
         border-color: rgb(12, 125, 105);
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* #linha03Input{
-        display: flex;
-    }
-
-    .inputLinha03{
-        border-radius: 5px;
-        border-style: solid;
-        padding-left: 30px;
-        border-width: 1px;
-        height: 30px;
-        width: 180px;
-        background-color: white;
-        border-color: gray;
-    }
-    
-    #linha03Input{
-        display: flex;
-    }
-
-    .inputLinha03{
-        height: 40px; 
-        text-indent: 30px; 
-    }
-
-    #txt02{
+    #linha04{
         font-size: 15px;
-        padding-top: 0px;
-        padding-left: 0px;
+        padding-top: 20px;
+        color: rgb(88, 88, 88);
     }
-    
-    #checkbox01Linha03{
-        top: -27px;
-        left: 20px;
-        transform: scale(1.5);
-    }
-    
-    #checkbox02Linha03{
-        top: -27px;
-        left: 20px;
-        transform: scale(1.5);
-    }
-
-
- */
-
-
-
-
-
-
-
-
-
 
     #txtMessage{
-        width: 75%;
+        width: 100%;
         height: 150px;
     }
 
@@ -176,7 +100,7 @@
     }
 
     #linha05{
-       width: 75%;
+       width: 100%;
     }
 
     #checkboxLinha05{
@@ -184,7 +108,7 @@
     }
     
     #btnSubmit{
-        width: 75%;
+        width: 100%;
         margin-top: 20px;
         height: 40px;
     }
